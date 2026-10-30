@@ -614,6 +614,10 @@ textarea {
   gap: 2rem;
 }
 
+.about-copy p + p {
+  margin-top: 1rem;
+}
+
 .about-photo img {
   border-radius: var(--radius);
   min-height: 470px;
@@ -647,11 +651,46 @@ textarea {
   font-size: 0.82rem;
 }
 
+.faq-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(12, 23, 35, 0.9);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 2rem;
   align-items: start;
+}
+
+.inquiry-note {
+  margin-top: 1rem;
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .contact-list {

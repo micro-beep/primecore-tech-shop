@@ -42,6 +42,7 @@ const cartCount = document.getElementById('cartCount');
 const contactForm = document.getElementById('contactForm');
 const formMsg = document.getElementById('formMsg');
 const yearEl = document.getElementById('year');
+const salesEmail = 'sales@primecoretech.com';
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -98,9 +99,20 @@ if (productGrid) {
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
     const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    formMsg.textContent = `Thanks, ${name}! Your inquiry has been received and our team will contact you soon.`;
+    const name = (formData.get('name') || 'Customer').toString().trim();
+    const email = (formData.get('email') || '').toString().trim();
+    const project = (formData.get('project') || 'General inquiry').toString().trim();
+    const message = (formData.get('message') || '').toString().trim();
+
+    const subject = encodeURIComponent(`PrimeCore inquiry from ${name} - ${project}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nProject type: ${project}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:${salesEmail}?subject=${subject}&body=${body}`;
+    formMsg.textContent = `Thanks, ${name}! Your inquiry is being sent to ${salesEmail}. Please confirm the email window that opens.`;
     contactForm.reset();
   });
 }
