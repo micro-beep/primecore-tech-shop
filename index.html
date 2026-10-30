@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeCore Tech | Premium Computer Store</title>
+    <meta
+      name="description"
+      content="PrimeCore Tech is a premium computer store offering custom gaming PCs, workstations, laptops, and tech solutions for businesses and creators."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="announcement-bar">
+      <p>Free shipping on orders over $500 • Custom PC builds available this week</p>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand">
+          <span class="brand-mark">P</span>
+          <span>PrimeCore</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="Search">⌕</button>
+          <button class="cart-button" aria-label="Cart">
+            Cart <span id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Built for performance</span>
+            <h1>Power your work, play, and growth.</h1>
+            <p>
+              Premium computers, custom workstations, and tech support for creators,
+              businesses, and gamers who need serious performance.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="primary-btn">Shop now</a>
+              <a href="#portfolio" class="secondary-btn">View portfolio</a>
+            </div>
+            <ul class="hero-trust">
+              <li>12K+ devices delivered</li>
+              <li>1,200+ business installs</li>
+              <li>24/7 support</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="floating-card card-top">
+              <span class="mini-label">Top seller</span>
+              <strong>RTX 4070 Pro</strong>
+              <small>Performance gaming PC</small>
+            </div>
+            <div class="device-showcase">
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                alt="Gaming computer setup"
+              />
+            </div>
+            <div class="floating-card card-bottom">
+              <div>
+                <span class="mini-label">Client rating</span>
+                <strong>4.9/5</strong>
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-strip">
+        <div class="container logo-row" aria-label="Featured brands">
+          <span>ASUS</span>
+          <span>MSI</span>
+          <span>Intel</span>
+          <span>AMD</span>
+          <span>Logitech</span>
+          <span>HP</span>
+        </div>
+      </section>
+
+      <section class="products section-pad" id="shop">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Featured collection</span>
+              <h2>Ready-to-ship computer products</h2>
+            </div>
+            <a href="#contact" class="text-link">Need a custom build?</a>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="benefits section-pad">
+        <div class="container benefit-grid">
+          <div class="benefit-box">
+            <span class="icon">⚡</span>
+            <h3>High-performance hardware</h3>
+            <p>From gaming rigs to office workstations and AI-ready desktops.</p>
+          </div>
+          <div class="benefit-box">
+            <span class="icon">🛠️</span>
+            <h3>Custom builds</h3>
+            <p>Tailored systems configured around your workload and budget.</p>
+          </div>
+          <div class="benefit-box">
+            <span class="icon">🔒</span>
+            <h3>Warranty-backed</h3>
+            <p>Every unit comes with dependable warranty and technical support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section-pad" id="portfolio">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="eyebrow">Professional portfolio</span>
+              <h2>Trusted by businesses and creators</h2>
+            </div>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+                alt="Corporate office desktop setup"
+              />
+              <div class="portfolio-body">
+                <span class="tag">Corporate setup</span>
+                <h3>Modern office deployment for 80 employees</h3>
+                <p>We upgraded a growing company with secure desktop systems, ergonomic gear, and managed support.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+                alt="Creative team workspace"
+              />
+              <div class="portfolio-body">
+                <span class="tag">Creative studio</span>
+                <h3>Video editing workstations for a content team</h3>
+                <p>High-speed editing computers and calibration displays built for fast production workflows.</p>
+              </div>
+            </article>
+
+            <article class="portfolio-card">
+              <img
+                src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80"
+                alt="Gaming setup and streaming room"
+              />
+              <div class="portfolio-body">
+                <span class="tag">Gaming lounge</span>
+                <h3>Streaming-ready gaming environment</h3>
+                <p>Built a premium setup with performance workstations, lighting, audio, and zero-lag networking.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="milestones section-pad" id="milestones">
+        <div class="container">
+          <div class="section-heading compact">
+            <div>
+              <span class="eyebrow">Our milestones</span>
+              <h2>Growth built on performance and trust</h2>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2018</span>
+              <div class="timeline-content">
+                <h3>PrimeCore founded</h3>
+                <p>Started as a boutique computer specialist for local businesses and creators.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2020</span>
+              <div class="timeline-content">
+                <h3>Expanded to custom builds</h3>
+                <p>Introduced premium gaming and workstation builds with dedicated support plans.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2022</span>
+              <div class="timeline-content">
+                <h3>10,000+ systems shipped</h3>
+                <p>Scaled operations to serve national clients with faster delivery and installation support.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2025</span>
+              <div class="timeline-content">
+                <h3>Enterprise and creator focus</h3>
+                <p>Now delivering managed IT hardware, AI workstations, and premium computer setups globally.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-pad" id="about">
+        <div class="container about-grid">
+          <div class="about-photo">
+            <img
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=900&q=80"
+              alt="Technology specialist"
+            />
+          </div>
+          <div class="about-copy">
+            <span class="eyebrow">Why choose PrimeCore</span>
+            <h2>Not just a store — a technology partner.</h2>
+            <p>
+              We help businesses, gamers, and professionals choose the right setup for their
+              goals, from high-performance desktops to reliable workstation fleets and upgrade services.
+            </p>
+            <div class="stats-grid">
+              <div>
+                <strong>12K+</strong>
+                <span>Products sold</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Tech support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-content">
+            <span class="eyebrow">Contact us</span>
+            <h2>Let’s build your ideal system.</h2>
+            <p>Tell us what you need and our team will recommend the best hardware for your work or business.</p>
+
+            <ul class="contact-list">
+              <li><strong>Email:</strong> sales@primecoretech.com</li>
+              <li><strong>Phone:</strong> +1 (800) 555-0199</li>
+              <li><strong>Office:</strong> 240 Aurora Blvd, New York, NY</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="field-row">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+
+            <label>
+              Business or project type
+              <input type="text" name="project" placeholder="Gaming rig, office setup, workstation..." required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell us about your requirements" required></textarea>
+            </label>
+
+            <button type="submit" class="primary-btn">Send inquiry</button>
+            <p class="form-msg" id="formMsg" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#top" class="brand footer-brand">
+            <span class="brand-mark">P</span>
+            <span>PrimeCore</span>
+          </a>
+          <p>Premium computers and creative technology solutions.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#shop">Shop</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p>© <span id="year"></span> PrimeCore Tech</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
